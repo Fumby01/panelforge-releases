@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a PanelForge problem without sharing credentials
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use Help -> Export diagnostics, review the ZIP, and attach it below. Never attach secrets.yaml, HA tokens or Wi-Fi passwords."
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behaviour and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Reviewed diagnostics ZIP, screenshots and exact hardware revision
